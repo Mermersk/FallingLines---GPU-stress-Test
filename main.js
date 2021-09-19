@@ -5,8 +5,11 @@ console.log("hello i am underwater")
 const canvas = document.getElementById("c");
 const gl = canvas.getContext("webgl2")
 
-canvas.width = document.documentElement.clientWidth - 100
-canvas.height = document.documentElement.clientHeight - 200
+//canvas.width = document.documentElement.clientWidth - 100
+//canvas.height = document.documentElement.clientHeight - 200
+
+canvas.width = 1000
+canvas.height = 600
 
 
 const vertexShaderPromise = fetch("./main.vert").then(
